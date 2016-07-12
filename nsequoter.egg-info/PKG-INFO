@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: nsequoter
+Version: 1.0.0
+Summary: Web scraping api for the National Stock Exchange of India. Retrives quotes for equities and equity futures from the NSE website.
+Home-page: https://github.com/TheAdityaKedia/nsequoter
+Author: Aditya Kedia
+Author-email: kedia.aditya@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

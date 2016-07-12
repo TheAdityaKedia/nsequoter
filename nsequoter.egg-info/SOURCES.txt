@@ -1,0 +1,11 @@
+README.rst
+setup.py
+nsequoter/__init__.py
+nsequoter/quoter.py
+nsequoter/utils.py
+nsequoter.egg-info/PKG-INFO
+nsequoter.egg-info/SOURCES.txt
+nsequoter.egg-info/dependency_links.txt
+nsequoter.egg-info/not-zip-safe
+nsequoter.egg-info/requires.txt
+nsequoter.egg-info/top_level.txt
