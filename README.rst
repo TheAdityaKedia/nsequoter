@@ -11,6 +11,11 @@ nsequoter Documentation
 
    
 
+Summary
+-------
+
+'nsequoter' is a python library that allows developers to fetch equity and derivative prices from the National Stock Exchange of India(NSE).
+
 Motivation
 ----------
 
@@ -18,8 +23,8 @@ Python is fast becoming the programing language of choice for Quants
 and Data Analysts, and an easy way to fetch data from the most 
 important sources is needed. The power and popularity of Python reside 
 in the ability to reuse code on through over 40000 libraries and modules. 
-That said, getting quotes from the National Stock Exchange of India (NSE) 
-is quite hard in python, and most other languages for that matter.
+That said, getting quotes from the NSE is quite hard in python, and most 
+other languages for that matter.
 
 nsequoter is a module that aims to make it trivially easy to get these 
 quotes from the NSE, by simply reading the data off the exchange's website
