@@ -76,8 +76,18 @@ class Utils():
         for i in range(len(items)):
             self._codes[items[i][0]]=items[i][1]
     
-    #based on parameters, builsd the right url to be scraped and scrapes it    
-    def get_quote(self, eq, cont='EQ', mon=_month):
+    
+    def get_quote(self, eq: str, cont: Optional[str] = 'EQ', mon: Optional[Union[str, int]] = _month) -> float:
+        """
+        Given a ticker for a security and optinally a month of the year, this funciton gets the price
+        for the underlying security or the futures contract for the given month as a 3 letter string or
+        an integer value.
+        
+        Args:
+        
+        Return:
+        
+        """
         
         eq = eq.upper()        
         if eq not in self._codes:
@@ -94,6 +104,11 @@ class Utils():
             if ((self._months.index(mon)+1) > ((self._month+2)%12)) or ((self._months.index(mon)+1) < self._month):
                 raise Exception('Contract not available!')
             y = self._year
+
+            if isinstance(mon, int):
+                datetime_obj = datetime.strptime(mon, %m)
+                mon = datetime_obj.strftime(%b)
+
             if (self._month == 'DEC') and (mon == 'JAN' or 'FEB'): y+=1
             d = self._get_last_thursday(y, (self._months.index(mon)+1))
             if self._date > d:
